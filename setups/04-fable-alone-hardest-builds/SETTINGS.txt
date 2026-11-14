@@ -1,0 +1,3 @@
+Model: claude-fable-5-2
+Effort: medium
+What it is: Fable 5.2 alone, medium

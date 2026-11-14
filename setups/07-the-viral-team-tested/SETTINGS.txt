@@ -1,0 +1,3 @@
+Model: claude-fable-5-2
+Effort: medium
+What it is: Viral team: Fable lead, Opus builder, Sonnet tester, Haiku scout

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0b0e17">
+<title>Arena Survival</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="game" aria-label="Arena Survival game area"></canvas>
+
+  <div id="hud" class="hidden">
+    <div class="hud-hp">
+      <div class="hp-bar"><div id="hpFill"></div><span id="hpText">100 / 100</span></div>
+    </div>
+    <div class="hud-stats">
+      <span class="stat"><b>Wave</b> <span id="hudWave">1</span></span>
+      <span class="stat"><b>Score</b> <span id="hudScore">0</span></span>
+      <span class="stat coin"><b>Coins</b> <span id="hudCoins">0</span></span>
+      <span class="stat"><b>Left</b> <span id="hudLeft">0</span></span>
+    </div>
+    <button id="muteBtn" class="icon-btn" type="button" aria-label="Toggle sound" title="Toggle sound (M)"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="wave-on" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path class="wave-off" d="M16 9l6 6M22 9l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+
+  <div id="titleScreen" class="overlay">
+    <div class="panel">
+      <h1>ARENA<br><span>SURVIVAL</span></h1>
+      <p class="tagline">Survive endless waves. Spend coins. Get stronger.</p>
+      <p class="best">High score: <strong id="titleHigh">0</strong></p>
+      <button id="startBtn" class="big-btn" type="button">Start Game</button>
+      <div class="help">
+        <p><b>Move:</b> WASD / Arrow keys, or drag anywhere on touch screens</p>
+        <p><b>Shoot:</b> automatic, at the nearest enemy</p>
+        <p><b>Shop:</b> keys 1–9 buy upgrades, Enter continues</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="shopScreen" class="overlay hidden">
+    <div class="panel shop-panel">
+      <h2 id="shopTitle">Wave 1 cleared!</h2>
+      <p class="shop-coins">Coins: <strong id="shopCoins">0</strong> &nbsp;·&nbsp; HP: <strong id="shopHp">100/100</strong></p>
+      <div id="upgradeList" class="upgrade-list"></div>
+      <button id="continueBtn" class="big-btn" type="button">Continue to Wave 2 ▶</button>
+      <p class="hint">Keys 1–9 buy · Enter continues</p>
+    </div>
+  </div>
+
+  <div id="gameOverScreen" class="overlay hidden">
+    <div class="panel">
+      <h2 class="over">GAME OVER</h2>
+      <p id="newBest" class="new-best hidden">★ New high score! ★</p>
+      <div class="results">
+        <div><span>Score</span><strong id="goScore">0</strong></div>
+        <div><span>Wave</span><strong id="goWave">1</strong></div>
+        <div><span>High score</span><strong id="goHigh">0</strong></div>
+      </div>
+      <button id="restartBtn" class="big-btn" type="button">Play Again</button>
+      <button id="menuBtn" class="small-btn" type="button">Title Screen</button>
+      <p class="hint">Press Enter to restart</p>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+{
+ "truth": {
+  "q1_real_customers": 1219,
+  "q2_revenue_2025_usd": 163220.17,
+  "q3_best_month_2025": "2025-12",
+  "q4_biggest_drop_month_2025": "2025-08",
+  "q5_refund_rate_pct": 5.3,
+  "q6_top_country_by_customers": "United States",
+  "q7_aov_by_plan_usd": {
+   "basic": 20.92,
+   "plus": 34.47,
+   "premium": 55.65
+  },
+  "q8_repeat_customer_pct": 90.6,
+  "q9_highest_refund_source": "podcast",
+  "q10_median_resolution_hours": 18.7,
+  "q11_lowest_satisfaction_category": "delivery",
+  "q12_coupon_order_pct": 22.5
+ },
+ "extra": {
+  "monthly_revenue": {
+   "2024-07": 8541.18,
+   "2024-08": 8746.13,
+   "2024-09": 9252.55,
+   "2024-10": 10293.42,
+   "2024-11": 10681.24,
+   "2024-12": 11229.28,
+   "2025-01": 10784.77,
+   "2025-02": 12385.36,
+   "2025-03": 11555.02,
+   "2025-04": 12344.84,
+   "2025-05": 12852.73,
+   "2025-06": 13183.34,
+   "2025-07": 13884.62,
+   "2025-08": 8538.12,
+   "2025-09": 15407.08,
+   "2025-10": 14510.81,
+   "2025-11": 15595.04,
+   "2025-12": 22178.42
+  },
+  "drops": {
+   "2025-01": -445,
+   "2025-02": 1601,
+   "2025-03": -830,
+   "2025-04": 790,
+   "2025-05": 508,
+   "2025-06": 331,
+   "2025-07": 701,
+   "2025-08": -5346,
+   "2025-09": 6869,
+   "2025-10": -896,
+   "2025-11": 1084,
+   "2025-12": 6583
+  },
+  "refund_rate_by_source": {
+   "search": 4.4,
+   "social": 4.4,
+   "podcast": 11.6,
+   "friend": 4.3,
+   "ads": 4.0
+  },
+  "customers_by_country": {
+   "United States": 403,
+   "United Kingdom": 305,
+   "Germany": 200,
+   "France": 86,
+   "Canada": 121,
+   "Australia": 104
+  },
+  "sat_by_cat": {
+   "product": 4.06,
+   "delivery": 2.64,
+   "account": 3.91,
+   "billing": 3.53
+  },
+  "n_orders_rows": 8295,
+  "n_orders_clean": 7808,
+  "n_tickets_bad": 23
+ }
+}

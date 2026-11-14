@@ -1,0 +1,1 @@
+Do the analysis described in BRIEF.md in this folder. Work autonomously until `answers.json` and `report.html` are finished and you have checked them; nobody is available to answer questions. Python 3 (standard library only, no pandas) and Node 26 are installed, along with Playwright (the Node `playwright` module with Chromium) if you want to look at your report in a browser.

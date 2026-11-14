@@ -1,0 +1,3 @@
+Model: claude-opus-5-5
+Effort: medium
+What it is: Budget: Opus lead, Sonnet builder, Haiku tester and scout

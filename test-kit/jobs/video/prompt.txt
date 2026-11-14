@@ -1,0 +1,1 @@
+Make the animated explainer video described in BRIEF.md in this folder. Work autonomously until the final MP4 is rendered and you have checked it by looking at frames from it; nobody is available to answer questions. Node 26 (with npm, and network access for installing packages), Python 3, ffmpeg and Playwright (the Node `playwright` module with Chromium) are installed.

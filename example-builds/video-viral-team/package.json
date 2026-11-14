@@ -1,0 +1,16 @@
+{
+  "name": "compound-explainer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Code-rendered motion-graphics explainer: why starting early beats saving more",
+  "scripts": {
+    "render": "node render.mjs",
+    "snap": "node tools/snap.mjs"
+  },
+  "dependencies": {
+    "@fontsource/manrope": "5.3.0",
+    "@fontsource/sora": "5.3.0",
+    "playwright": "1.65.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "p2aa7f6",
+  "version": "1.0.0",
+  "description": "Compound interest explainer video",
+  "main": "index.js",
+  "scripts": {
+    "render": "node render.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0"
+  }
+}

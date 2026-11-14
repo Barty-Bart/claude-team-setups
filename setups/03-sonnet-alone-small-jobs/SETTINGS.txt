@@ -1,0 +1,3 @@
+Model: claude-sonnet-5-5
+Effort: medium
+What it is: Sonnet 5.5 alone, medium

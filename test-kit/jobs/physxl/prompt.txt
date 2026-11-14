@@ -1,0 +1,1 @@
+Build the physics engine, demo page, tests and README described in SPEC.md in this folder. Work autonomously until it is finished and you have verified it works; nobody is available to answer questions. Node 26, Python 3 and Playwright (the Node `playwright` module with Chromium) are installed if you want to test.

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#070a12">
+<title>Arena Survival</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game" aria-label="Arena Survival play area"></canvas>
+
+<div id="hud" class="hidden">
+  <div class="hpbar"><div id="hp-fill"></div><span id="hp-text">100 / 100</span></div>
+  <div class="hud-stat">Wave <b id="hud-wave">1</b></div>
+  <div class="hud-stat">Score <b id="hud-score">0</b></div>
+  <div class="hud-stat coins"><span class="coin-icon"></span><b id="hud-coins">0</b></div>
+</div>
+
+<button id="mute-btn" type="button" aria-label="Toggle sound" title="Toggle sound (M)">&#9835;</button>
+
+<div id="title-screen" class="overlay">
+  <div class="panel">
+    <h1>ARENA<br><span>SURVIVAL</span></h1>
+    <p class="sub">Survive endless waves. Your gun fires on its own.</p>
+    <ul class="howto">
+      <li><b>Move:</b> WASD / arrow keys, or drag anywhere on the screen</li>
+      <li><b>Shop:</b> spend coins between waves (keys 1-9)</li>
+    </ul>
+    <p class="best">High score: <b id="title-highscore">0</b></p>
+    <button id="start-btn" class="big-btn" type="button">Start game</button>
+    <p class="hint">Press Enter to start</p>
+  </div>
+</div>
+
+<div id="shop-screen" class="overlay hidden">
+  <div class="panel shop-panel">
+    <h2 id="shop-title">Wave 1 cleared!</h2>
+    <div class="shop-info">
+      <span class="coins"><span class="coin-icon"></span><b id="shop-coins">0</b></span>
+      <span>HP <b id="shop-hp">100 / 100</b></span>
+    </div>
+    <div id="shop-items"></div>
+    <button id="continue-btn" class="big-btn" type="button">Next wave</button>
+    <p class="hint">Keys 1-9 buy &middot; Enter continues</p>
+  </div>
+</div>
+
+<div id="gameover-screen" class="overlay hidden">
+  <div class="panel">
+    <h2 class="danger">GAME OVER</h2>
+    <p class="final">Score <b id="go-score">0</b></p>
+    <p>Reached wave <b id="go-wave">1</b></p>
+    <p id="go-newhigh" class="newhigh hidden">New high score!</p>
+    <p class="best">High score: <b id="go-highscore">0</b></p>
+    <button id="restart-btn" class="big-btn" type="button">Play again</button>
+    <p class="hint">Press Enter to restart</p>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>

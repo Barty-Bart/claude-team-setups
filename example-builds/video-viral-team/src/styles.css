@@ -1,0 +1,80 @@
+/* Fonts: bundled with @fontsource packages, loaded from local node_modules (no network). */
+@font-face { font-family: "Sora"; font-weight: 600; src: url("../node_modules/@fontsource/sora/files/sora-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Sora"; font-weight: 700; src: url("../node_modules/@fontsource/sora/files/sora-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Sora"; font-weight: 800; src: url("../node_modules/@fontsource/sora/files/sora-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-weight: 500; src: url("../node_modules/@fontsource/manrope/files/manrope-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-weight: 600; src: url("../node_modules/@fontsource/manrope/files/manrope-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-weight: 700; src: url("../node_modules/@fontsource/manrope/files/manrope-latin-700-normal.woff2") format("woff2"); }
+
+:root {
+  --bg0: #060b20;
+  --bg1: #0c1738;
+  --ink: #f4f6ff;
+  --muted: #b3bddf;
+  --ana: #ffb547;
+  --ben: #a08fff;
+  --ben-text: #b8acff;
+  --navy: #0a1230;
+  --r-lg: 28px;
+  --r-md: 18px;
+}
+
+html, body { margin: 0; padding: 0; background: #000; overflow: hidden; }
+#viewport { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; }
+#stage {
+  position: relative; width: 1920px; height: 1080px; overflow: hidden; flex: none;
+  background: var(--bg0); color: var(--ink);
+  font-family: "Manrope", sans-serif; font-weight: 600;
+  transform-origin: center center;
+}
+body.render #viewport { display: block; }
+
+#stage * { box-sizing: border-box; }
+.abs { position: absolute; left: 0; top: 0; }
+.layer { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+svg.layer { overflow: visible; }
+
+.display { font-family: "Sora", sans-serif; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+.h2 { font-family: "Sora", sans-serif; font-weight: 700; font-size: 60px; letter-spacing: -0.015em; line-height: 1.15; white-space: nowrap; }
+.num { font-family: "Sora", sans-serif; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; letter-spacing: -0.01em; }
+.body { font-family: "Manrope", sans-serif; font-weight: 600; white-space: nowrap; }
+.muted { color: var(--muted); }
+.ana { color: var(--ana); }
+.ben { color: var(--ben-text); }
+
+/* masked word rise */
+.mask { display: inline-block; overflow: hidden; vertical-align: top;
+  padding: 0.06em 0.05em 0.2em; margin: -0.06em -0.05em -0.2em; }
+.mi { display: inline-block; will-change: transform; }
+
+.card {
+  position: absolute; border-radius: var(--r-lg);
+  background: linear-gradient(160deg, rgba(255,255,255,0.075), rgba(255,255,255,0.025));
+  border: 2px solid rgba(255,255,255,0.10);
+}
+.pill {
+  position: absolute; border-radius: 999px; white-space: nowrap;
+  background: rgba(255,255,255,0.06); border: 2px solid rgba(255,255,255,0.14);
+}
+
+.avatar {
+  position: absolute; left: 0; top: 0; width: 128px; height: 128px; margin: -64px 0 0 -64px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: "Sora", sans-serif; font-weight: 800; font-size: 64px; color: var(--navy);
+}
+.avatar .shape { position: absolute; inset: 0; }
+.avatar .ring { position: absolute; inset: -12px; border: 3px solid; opacity: 0.5; }
+.avatar span { position: relative; }
+#avA .shape, #avA .ring { border-radius: 50%; }
+#avB .shape, #avB .ring { border-radius: 30%; }
+#avA .shape { background: radial-gradient(circle at 35% 30%, #ffd58a, var(--ana) 60%, #e8962a); }
+#avB .shape { background: radial-gradient(circle at 35% 30%, #cfc5ff, var(--ben) 60%, #7b67f0); }
+#avA .ring { border-color: var(--ana); }
+#avB .ring { border-color: var(--ben); }
+
+.bar { position: absolute; border-radius: 24px; overflow: hidden; }
+.seg { position: absolute; left: 0; width: 100%; }
+.stripe-ana { background: repeating-linear-gradient(135deg, rgba(255,181,71,0.55) 0 14px, rgba(255,181,71,0.30) 14px 28px); }
+.stripe-ben { background: repeating-linear-gradient(135deg, rgba(160,143,255,0.60) 0 14px, rgba(160,143,255,0.32) 14px 28px); }
+.solid-ana { background: linear-gradient(180deg, #ffcf7f, var(--ana) 40%, #f09a2c); }
+.solid-ben { background: linear-gradient(180deg, #c6bbff, var(--ben) 40%, #7f6cf2); }

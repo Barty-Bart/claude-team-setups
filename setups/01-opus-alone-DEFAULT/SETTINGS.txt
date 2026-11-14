@@ -1,0 +1,3 @@
+Model: claude-opus-5-5
+Effort: medium
+What it is: Opus 5.5 alone, medium

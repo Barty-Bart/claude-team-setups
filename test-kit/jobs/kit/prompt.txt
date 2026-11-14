@@ -1,0 +1,1 @@
+Build the eight modules described in SPEC.md in this folder. Work autonomously until everything is finished and you have verified it works; nobody is available to answer questions. Node 26 and Python 3 are installed.
